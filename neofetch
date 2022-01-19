@@ -1637,8 +1637,8 @@ get_packages() {
             has puyo    && dir ~/.puyo/installed
 
 
-            has rookie.py && {
-                manager=rookie.py && tot rookie.py --list-packages
+            has rookie && {
+                manager=rookie && tot rookie --list-packages
             }
 
             # Snap hangs if the command is run without the daemon running.
